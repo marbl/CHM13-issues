@@ -1,2 +1,2 @@
-# CHM13
-CHM13 human reference genome resources
+# CHM13-issues
+CHM13 human reference genome issue tracking
