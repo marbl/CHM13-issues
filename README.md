@@ -37,7 +37,7 @@ awk '$11>1000 && $10/$11>0.85' ont.primary.paf > ont_pri.len1k_idy85.paf
 ```
 
 ## Low coverage region
-Low coverage (<10x) regions were collected for HiFi, CLR, ONT reads with [asset commit ver. 0133f268eebf308a1c3eb356b564550526465157](https://github.com/dfguan/asset) `ast_pb -M 10000000`, which collects coverage from alignment blocks trimmed 500bp on both sides of the block ends to avoid spurious mapping. Regions over 10x coverage are reported as ‘supportive’. Low coverage regions were obtained with `bedtools subtract`, and merged when regions were 1kbp apart with `bedtools merge -d 1000`. Regions overlapping rDNA gaps +/- 10bp were excluded.
+Low coverage (<10x) regions were collected for HiFi, CLR, ONT reads with [asset commit ver. 0133f268eebf308a1c3eb356b564550526465157](https://github.com/dfguan/asset) `ast_pb -M 10000000`, which collects coverage from alignment blocks trimmed 300bp on both sides of the block ends to avoid spurious mapping. Regions over 10x coverage are reported as ‘supportive’. Low coverage regions were obtained with `bedtools subtract`, and merged when regions were 1kbp apart with `bedtools merge -d 1000`. Regions overlapping rDNA gaps +/- 10bp were excluded.
 
 ### Associated files
 * low_coverage.filt.bed : bed file for the region described above
