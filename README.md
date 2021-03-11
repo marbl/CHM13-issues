@@ -10,9 +10,31 @@ For any downstream analysis, please use the following files:
 * 2021-02-23 Low coverage regions for HiFi, CLR, and ONT read alignments
 
 ## Alignments
-HiFi, ONT, CLR reads were aligned to the assembly using [Winnowmap 1.11](https://github.com/marbl/Winnowmap/releases). From the reads, top 0.02% of the repetitive 15-mers were collected using Meryl and provided as “bad mers” to avoid seeding. Platform specific mapping parameters were provided; map-pb for hifi, map-pb-clr for CLR, and map-ont for ONT reads, respectively. Reads were sorted and indexed using samtools, and filtered for primary reads with `samtools view -F256`. Spurious alignment blocks shorter than 1kbp or lower than 85% identity were removed from the ONT primary alignments.
+HiFi, ONT, CLR reads were aligned to the assembly using [Winnowmap 1.11](https://github.com/marbl/Winnowmap/releases). From the reads, top 0.02% of the repetitive 15-mers were collected using Meryl and provided as “bad mers” to avoid seeding. Platform specific mapping parameters were provided; map-pb for hifi, map-pb-clr for CLR, and map-ont for ONT reads, respectively. Reads were sorted and indexed using samtools, and filtered for primary reads with `samtools view -F0x100`.
 
-These alignments were converted to pairwise alignment format (paf) and processed to collect low coverage and excessive clipped regions.
+```shell
+# Collect repetitive 15-mers
+meryl count k=15 $ref output merylDB
+meryl print greater-than distinct=0.9998 merylDB > repetitive_k15.txt
+
+# Align
+winnowmap --MD -W repetitive_k15.txt -Ha -x map-$platform -t$cpus $ref $reads > $output.sam
+
+# Sort and filter
+samtools sort -@$cpus -m2G -O bam -o $output.bam $output.sam
+samtools view -F0x100 -hb $output.srt.bam > $output.primary.bam
+```
+
+These alignments were converted to pairwise alignment format (paf) using [paftools from minimap2 v2.17](https://github.com/lh3/minimap2/tree/master/misc) and processed to collect low coverage and excessive clipped regions.
+Spurious alignment blocks shorter than 1kbp or lower than 85% identity were removed from the ONT primary alignments.
+
+```shell
+# Convert to paf
+samtools view -h -@$cpus $output.primary.bam | k8 paftools.js sam2paf - | cut -f 1-16 - >  $output.primary.paf
+
+# Filter ONT for alignment blocks < 1kbp and identity < 85%
+awk '$11>1000 && $10/$11>0.85' ont.primary.paf > ont_pri.len1k_idy85.paf
+```
 
 ## Low coverage region
 Low coverage (<10x) regions were collected for HiFi, CLR, ONT reads with [asset commit ver. 0133f268eebf308a1c3eb356b564550526465157](https://github.com/dfguan/asset) `ast_pb -M 10000000`, which collects coverage from alignment blocks trimmed 500bp on both sides of the block ends to avoid spurious mapping. Regions over 10x coverage are reported as ‘supportive’. Low coverage regions were obtained with `bedtools subtract`, and merged when regions were 1kbp apart with `bedtools merge -d 1000`. Regions overlapping rDNA gaps +/- 10bp were excluded.
