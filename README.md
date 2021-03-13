@@ -18,7 +18,7 @@ meryl count k=15 $ref output merylDB
 meryl print greater-than distinct=0.9998 merylDB > repetitive_k15.txt
 
 # Align
-winnowmap --MD -W repetitive_k15.txt -Ha -x map-$platform -t$cpus $ref $reads > $output.sam
+winnowmap --MD -W repetitive_k15.txt -ax map-$platform -t$cpus $ref $reads > $output.sam
 
 # Sort and filter
 samtools sort -@$cpus -m2G -O bam -o $output.bam $output.sam
