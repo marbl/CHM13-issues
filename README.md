@@ -62,8 +62,9 @@ Total number of reads with more than 100 bp soft-clipped or hard-clipped bases w
 
 ### Associated files
 * issues.bed: Low coverage + Flanking clipped regions
+
 | Label | Description | R,G,B | Color|
-| :---: | :---: | :--- | :---: |
+| :--- | :--- | :---: | :---: |
 | Low | Low coverage | 204,0,0 | red |
 | Low_Qual | Low coverage from lower consensus quality | 204,0,0 | red |
 | Low_GA/TC, Low_AT | Low coverage from sequencing bias | 153,153,255 | light purple |
