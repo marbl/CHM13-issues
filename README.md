@@ -2,13 +2,13 @@
 CHM13 human reference genome issue tracking
 
 For any downstream analysis, please use the following files:
-* Possible consensus or mis-assembly issue: issues.bed
+* Possible consensus or mis-assembly issue: <ver.>_issues.bed (= hifi.pri.issues.bed as ont issues overlap)
 * Validated het sites (TBA)
 
 ## Releases
 * 2021-03-08 Combined low coverage and clipped regions
 * 2021-02-23 Low coverage regions for HiFi, CLR, and ONT read alignments
-* 2021-04-28 Low coverage regions for HiFi and ONT read alignments
+* 2021-04-28 Issues track for HiFi and ONT read alignments from Winnowmap 2.01
 
 ## Alignments
 HiFi and ONT reads were aligned to the assembly using [Winnowmap 2.01](https://github.com/marbl/Winnowmap/releases). From the reads, top 0.02% of the repetitive 15-mers were collected using Meryl and downweighted in the process of minimizer sampling. Platform specific mapping parameters were provided; map-pb for hifi and map-ont for ONT reads, respectively. Reads were sorted and indexed using samtools, and filtered for primary reads with `samtools view -F0x100`.
