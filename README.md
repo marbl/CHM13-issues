@@ -36,7 +36,7 @@ Spurious alignment blocks shorter than 1kb or lower than 85% identity were remov
 # Convert to paf
 samtools view -h -@$cpus $output.primary.bam | k8 paftools.js sam2paf - | cut -f 1-16 - >  $output.primary.paf
 
-# Filter ONT for alignment blocks < 1kbp and identity < 85%
+# Filter ONT for alignment blocks < 1kb and identity < 85%
 awk '$11>1000 && $10/$11>0.85' ont.primary.paf > ont_pri.len1k_idy85.paf
 ```
 
@@ -53,7 +53,7 @@ ast_pb -m 10 -M 10000000 $paf > $pre.bed
 
 Alignment blocks were trimmed 300bp on both sides to avoid spurious mapping while collecting coverage in ONT. Low coverage regions were obtained with `bedtools subtract`, and merged when regions were 5kb apart with `bedtools merge -d 5000`. Regions overlapping collapsed rDNA region (only applied in v1.0 assembly) and 3kb around the end of chromosomes were excluded.
 
-To distinguish the cause of low coverage, we collected % GA/TC, GC, and AT micro satellite repeats in every 1024 bp window in the assembly that appears as dimers when compressing homopolymers. Any low coverage region overlapping with >80% of any micro satellite repeat within 10kb distance was marked accordingly.
+To distinguish the cause of low coverage, we collected % GA/TC, GC, and AT micro satellite repeats in every 128 bp window in the assembly that appears as dimers when compressing homopolymers. Any low coverage region overlapping with >80% of any micro satellite repeat within 10kb distance was marked accordingly.
 
 In addition, regions overlapping with known consensus issues obtained with [Merqury](https://github.com/marbl/merqury) Illumina-HiFi hybrid 21-mers were marked as `Low_Qual`.
 
