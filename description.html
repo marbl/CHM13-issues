@@ -1,0 +1,51 @@
+<h2>Description</h2>
+<p>Issues</p>
+Track: v1.0_issues.bed
+
+<h2>Methods</h2>
+<p>
+This file contains regions with low coverage from HiFi and ONT platforms.<br><br>
+
+Reads were aligned with Winnowmap 2.01.<br><br>
+Primary read alignments have been processed with asset commit ver. 0133f268eebf308a1c3eb356b564550526465157, and regions meeting the following criteria are reported in each platform:<br><br>
+
+<li> Less than 7 reads aligned in hifi, 10 reads aligned in ONT<br>
+<li> Merged when regions are less than 5 kb apart<br>
+<li> Exclude low coverage at both 3 kb ends of each chromosome due to natural coverage drop<br>
+<li> Exclude low coverage overlapping rDNA gaps
+</p>
+<p>
+Issues track from each platform:<br>
+<li> hifi.pri.issues.bed
+<li> ont.pri.len1k_idy85.issues.bed (this file contains regions completely overlapping hifi.pri.issues.bed)
+<br>
+Clipped regions not associated with low coverage:<br>
+<li> hifi.pri.clipped.bed
+<li> ont.pri.len1k_idy85.clipped.bed
+</p>
+<h2>Display Conventions and Configuration</h2>
+<!-- if there are special conventions, like colors, describe them here -->
+<p>
+<li> Low (Low coverage) or Low_Qual (Low coverage associated with consensus error) : 204,0,0 (red)
+<li> Low_GA/TC, Low_AT (Low coverage from sequencing bias) : 153,153,255 (light purple)
+<li> Clipped (Region with excessive read clipping) : 153,153,153 (gray)
+</p>
+
+
+<h2>Data access</h2>
+<!-- Optional, links for downloading the data if there is a separate source beside the
+browser  -->
+<p>https://github.com/marbl/CHM13-issues/v1.0_issues.bed</p>
+
+<h2>Release history</h2>
+<ol>
+<li> 2021 Feb 23. Internal release
+</ol>
+
+<h2>Contacts</h2>
+<ul>
+<li><a href="https://github.com/marbl/CHM13-issues">Please report any issues to https://github.com/marbl/CHM13-issues</a>
+</ul>
+<h2>Credits</h2>
+<p></p>
+
