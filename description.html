@@ -1,13 +1,12 @@
 <h2>Description</h2>
-<p>Issues</p>
-Track: v1.0_issues.bed
+<p>Issues Track: v1.0_issues.bed (hifi.pri.issues.bed)<\p>
 
 <h2>Methods</h2>
 <p>
 This file contains regions with low coverage from HiFi and ONT platforms.<br><br>
 
 Reads were aligned with Winnowmap 2.01.<br><br>
-Primary read alignments have been processed with asset commit ver. 0133f268eebf308a1c3eb356b564550526465157, and regions meeting the following criteria are reported in each platform:<br><br>
+Primary read alignments have been processed with asset commit ver. 0133f268eebf308a1c3eb356b564550526465157, and regions meeting the following criteria are reported in each platform:<br>
 
 <li> Less than 7 reads aligned in hifi, 10 reads aligned in ONT<br>
 <li> Merged when regions are less than 5 kb apart<br>
@@ -15,11 +14,12 @@ Primary read alignments have been processed with asset commit ver. 0133f268eebf3
 <li> Exclude low coverage overlapping rDNA gaps
 </p>
 <p>
-Issues track from each platform:<br>
+Issues track from each platform:
 <li> hifi.pri.issues.bed
 <li> ont.pri.len1k_idy85.issues.bed (this file contains regions completely overlapping hifi.pri.issues.bed)
-<br>
-Clipped regions not associated with low coverage:<br>
+</p>
+<p>
+Clipped regions not associated with low coverage:
 <li> hifi.pri.clipped.bed
 <li> ont.pri.len1k_idy85.clipped.bed
 </p>
@@ -39,6 +39,7 @@ browser  -->
 
 <h2>Release history</h2>
 <ol>
+<li> 2021 Apr 28. Internal release
 <li> 2021 Feb 23. Internal release
 </ol>
 
