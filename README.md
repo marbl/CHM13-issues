@@ -3,9 +3,10 @@ CHM13 human reference genome issue tracking
 
 For any downstream analysis, please use the following files:
 * Possible consensus or mis-assembly issue: <ver.>_issues.bed (= hifi.pri.issues.bed as ont issues overlap)
-* Validated het sites (TBA)
+* Het sites: chm13.draft_v1.0.curated_sv.20210612.vcf, chm13.draft_v1.0.hets_combined.20210615.bed
 
 ## Releases
+* 2021-06-15 Validated het SVs and clusters of heterozygous sites in v1.0 assembly
 * 2021-04-28 Issues track for HiFi and ONT read alignments from Winnowmap 2.01
 * 2021-03-08 Combined low coverage and clipped regions
 * 2021-02-23 Low coverage regions for HiFi, CLR, and ONT read alignments
@@ -75,7 +76,37 @@ Total number of reads with more than 100 bp soft-clipped or hard-clipped bases w
 * Relative fraction of clipped reads compared to all reads: hifi_pri.w1k.clip_norm.wig, ont_pri.len1k_idy85.w1k.clip_norm.wig
 * Value of -1 represents windows with no read alignments
 
-## het sites
+## Het sites
 
-TBA
+Heterozygous sturcutral variants and clusters of heterozygous regions collected on v1.0 release.
 
+A manuscript describing the details of each variant calling methods are in preparation and will be posted soon.
+
+### Clusters of heterozygous regions: chm13.draft_<ver.>.hets_combined.YYYYMMDD.bed
+
+| Abbreviation | Description |
+| :---: | :--- |
+| ID | Numbered ID |
+| SC | Source of detection method |
+| AF | Allele frequency
+| PL | Platform support |
+| LEN | SV size |
+| (TYPE) | INS, DEL, DUP, INV for Insertion, Deletion, Duplication, Inversion |
+
+| SC | Source |
+| :---: | :--- |
+| Curated | Hets from SV calling methods, manually curated for the position, LEN, AF, and SV type (manusript in prep.) |
+| Clipped | Hets from read clippings in HiFi and ONT, curated for position, LEN, AF, and SV type (manusript in prep.) |
+| NucFreq | Clusters of heterozygous small variants called with [NucFreq](https://github.com/mrvollger/NucFreq)
+| tQ | Heterozygous SVs and AF detected from [TandemMapper and TandemQUAST](https://doi.org/10.1093/bioinformatics/btaa440) |
+
+
+### Curated SVs: chm13.draft_<ver.>.curated_sv.YYYYMMDD.vcf
+
+SVs manually validated for breakpoints, CCS AF, and SV type. CLR and ONT AF may be slightly lower than the actual AF due to mapping biases.
+
+## Citation
+
+Please cite the paper below if any of the materials posted on this github are used:
+
+Nurk, Koren, Rhie, and Rautiainen et al, The complete sequence of a human genome, bioRxiv (2021) https://doi.org/10.1101/2021.05.26.445798
