@@ -1,0 +1,571 @@
+track type= "wiggle_0" name="Issues"
+fixedStep chrom=chr1 start=94 step=65 span=65
+1
+fixedStep chrom=chr1 start=855206 step=9623 span=9623
+1
+fixedStep chrom=chr1 start=24541741 step=4750 span=4750
+1
+fixedStep chrom=chr1 start=31691184 step=29 span=29
+1
+fixedStep chrom=chr1 start=40071274 step=29 span=29
+1
+fixedStep chrom=chr1 start=98144607 step=30 span=30
+1
+fixedStep chrom=chr1 start=103696606 step=4739 span=4739
+1
+fixedStep chrom=chr1 start=137919935 step=2280 span=2280
+1
+fixedStep chrom=chr1 start=161788652 step=33 span=33
+1
+fixedStep chrom=chr1 start=164288249 step=30 span=30
+1
+fixedStep chrom=chr1 start=170808003 step=21 span=21
+1
+fixedStep chrom=chr1 start=176297673 step=25 span=25
+1
+fixedStep chrom=chr1 start=179589802 step=28 span=28
+1
+fixedStep chrom=chr1 start=193561778 step=26 span=26
+1
+fixedStep chrom=chr1 start=209667155 step=28 span=28
+1
+fixedStep chrom=chr1 start=242937723 step=21 span=21
+1
+fixedStep chrom=chr10 start=4 step=40 span=40
+1
+fixedStep chrom=chr10 start=109 step=36 span=36
+1
+fixedStep chrom=chr10 start=7461516 step=21 span=21
+1
+fixedStep chrom=chr10 start=10289067 step=29 span=29
+1
+fixedStep chrom=chr10 start=19474075 step=22 span=22
+1
+fixedStep chrom=chr10 start=55292558 step=25 span=25
+1
+fixedStep chrom=chr10 start=81323597 step=42 span=42
+1
+fixedStep chrom=chr10 start=85916074 step=28 span=28
+1
+fixedStep chrom=chr10 start=98128436 step=7040 span=7040
+1
+fixedStep chrom=chr10 start=98367070 step=28 span=28
+1
+fixedStep chrom=chr10 start=112126883 step=7446 span=7446
+1
+fixedStep chrom=chr10 start=129374283 step=23 span=23
+1
+fixedStep chrom=chr10 start=129375507 step=21 span=21
+1
+fixedStep chrom=chr10 start=129375914 step=28 span=28
+1
+fixedStep chrom=chr10 start=129376024 step=57 span=57
+1
+fixedStep chrom=chr10 start=129377797 step=24 span=24
+1
+fixedStep chrom=chr10 start=134671720 step=21009 span=21009
+1
+fixedStep chrom=chr11 start=68 step=84 span=84
+1
+fixedStep chrom=chr11 start=7268974 step=29 span=29
+1
+fixedStep chrom=chr11 start=8255225 step=5541 span=5541
+1
+fixedStep chrom=chr11 start=47701641 step=32 span=32
+1
+fixedStep chrom=chr11 start=54243485 step=41679 span=41679
+1
+fixedStep chrom=chr11 start=54335315 step=9401 span=9401
+1
+fixedStep chrom=chr11 start=74007192 step=26 span=26
+1
+fixedStep chrom=chr11 start=78637474 step=22 span=22
+1
+fixedStep chrom=chr11 start=80089940 step=29 span=29
+1
+fixedStep chrom=chr11 start=101940151 step=22 span=22
+1
+fixedStep chrom=chr11 start=110054555 step=22 span=22
+1
+fixedStep chrom=chr11 start=133873344 step=2119 span=2119
+1
+fixedStep chrom=chr11 start=135127440 step=24 span=24
+1
+fixedStep chrom=chr12 start=41012686 step=30 span=30
+1
+fixedStep chrom=chr12 start=63962530 step=24 span=24
+1
+fixedStep chrom=chr12 start=66695006 step=30 span=30
+1
+fixedStep chrom=chr12 start=73677141 step=26 span=26
+1
+fixedStep chrom=chr12 start=84063414 step=28 span=28
+1
+fixedStep chrom=chr12 start=86976020 step=32 span=32
+1
+fixedStep chrom=chr12 start=126838745 step=5673 span=5673
+1
+fixedStep chrom=chr12 start=133004261 step=10771 span=10771
+1
+fixedStep chrom=chr12 start=133324585 step=84 span=84
+1
+fixedStep chrom=chr12 start=133324670 step=61 span=61
+1
+fixedStep chrom=chr12 start=133324734 step=47 span=47
+1
+fixedStep chrom=chr13 start=70 step=31 span=31
+1
+fixedStep chrom=chr13 start=185 step=23 span=23
+1
+fixedStep chrom=chr13 start=2279803 step=678 span=678
+1
+fixedStep chrom=chr13 start=48022001 step=21 span=21
+1
+fixedStep chrom=chr13 start=81360634 step=30 span=30
+1
+fixedStep chrom=chr13 start=114238955 step=38 span=38
+1
+fixedStep chrom=chr14 start=33 step=36 span=36
+1
+fixedStep chrom=chr14 start=92 step=28 span=28
+1
+fixedStep chrom=chr14 start=121 step=35 span=35
+1
+fixedStep chrom=chr14 start=16891628 step=25 span=25
+1
+fixedStep chrom=chr14 start=23570547 step=21 span=21
+1
+fixedStep chrom=chr14 start=26616480 step=30 span=30
+1
+fixedStep chrom=chr14 start=30821854 step=31 span=31
+1
+fixedStep chrom=chr14 start=45850534 step=22 span=22
+1
+fixedStep chrom=chr14 start=61704395 step=23 span=23
+1
+fixedStep chrom=chr14 start=76863146 step=27 span=27
+1
+fixedStep chrom=chr14 start=81258959 step=25 span=25
+1
+fixedStep chrom=chr14 start=82215231 step=30 span=30
+1
+fixedStep chrom=chr14 start=101219108 step=29 span=29
+1
+fixedStep chrom=chr15 start=5 step=44 span=44
+1
+fixedStep chrom=chr15 start=500937 step=42096 span=42096
+1
+fixedStep chrom=chr15 start=17921064 step=6010 span=6010
+1
+fixedStep chrom=chr15 start=24961066 step=28 span=28
+1
+fixedStep chrom=chr15 start=35569501 step=30 span=30
+1
+fixedStep chrom=chr15 start=36007535 step=27 span=27
+1
+fixedStep chrom=chr15 start=51510982 step=28 span=28
+1
+fixedStep chrom=chr15 start=54978215 step=24 span=24
+1
+fixedStep chrom=chr15 start=73349094 step=29 span=29
+1
+fixedStep chrom=chr15 start=75481039 step=7477 span=7477
+1
+fixedStep chrom=chr15 start=79680511 step=30 span=30
+1
+fixedStep chrom=chr15 start=100336069 step=29 span=29
+1
+fixedStep chrom=chr15 start=100338138 step=60 span=60
+1
+fixedStep chrom=chr15 start=100338275 step=33 span=33
+1
+fixedStep chrom=chr16 start=16331577 step=6816 span=6816
+1
+fixedStep chrom=chr16 start=30639383 step=10687 span=10687
+1
+fixedStep chrom=chr16 start=36735111 step=40502 span=40502
+1
+fixedStep chrom=chr16 start=84758357 step=29 span=29
+1
+fixedStep chrom=chr16 start=92408881 step=31 span=31
+1
+fixedStep chrom=chr16 start=96330287 step=41 span=41
+1
+fixedStep chrom=chr16 start=96330405 step=52 span=52
+1
+fixedStep chrom=chr17 start=250 step=78 span=78
+1
+fixedStep chrom=chr17 start=420 step=24 span=24
+1
+fixedStep chrom=chr17 start=1586327 step=25 span=25
+1
+fixedStep chrom=chr17 start=8544893 step=28 span=28
+1
+fixedStep chrom=chr17 start=76054087 step=23 span=23
+1
+fixedStep chrom=chr17 start=84276890 step=22 span=22
+1
+fixedStep chrom=chr17 start=84276989 step=53 span=53
+1
+fixedStep chrom=chr17 start=84277051 step=39 span=39
+1
+fixedStep chrom=chr17 start=84277158 step=27 span=27
+1
+fixedStep chrom=chr18 start=135 step=36 span=36
+1
+fixedStep chrom=chr18 start=4988 step=38 span=38
+1
+fixedStep chrom=chr18 start=125679 step=13598 span=13598
+1
+fixedStep chrom=chr18 start=178768 step=26597 span=26597
+1
+fixedStep chrom=chr18 start=11939068 step=23 span=23
+1
+fixedStep chrom=chr18 start=25227387 step=1781 span=1781
+1
+fixedStep chrom=chr18 start=26047836 step=26 span=26
+1
+fixedStep chrom=chr18 start=51275138 step=29 span=29
+1
+fixedStep chrom=chr18 start=67629207 step=24 span=24
+1
+fixedStep chrom=chr18 start=73504016 step=26 span=26
+1
+fixedStep chrom=chr19 start=0 step=35 span=35
+1
+fixedStep chrom=chr19 start=620 step=21 span=21
+1
+fixedStep chrom=chr19 start=1008953 step=8149 span=8149
+1
+fixedStep chrom=chr19 start=2347906 step=6884 span=6884
+1
+fixedStep chrom=chr19 start=15433084 step=28 span=28
+1
+fixedStep chrom=chr19 start=16733139 step=28 span=28
+1
+fixedStep chrom=chr19 start=24094666 step=26 span=26
+1
+fixedStep chrom=chr19 start=28509243 step=10361 span=10361
+1
+fixedStep chrom=chr19 start=28527178 step=11739 span=11739
+1
+fixedStep chrom=chr19 start=41394403 step=31 span=31
+1
+fixedStep chrom=chr19 start=42144978 step=181 span=181
+1
+fixedStep chrom=chr19 start=56485446 step=28 span=28
+1
+fixedStep chrom=chr19 start=58806945 step=10147 span=10147
+1
+fixedStep chrom=chr19 start=61707074 step=69 span=69
+1
+fixedStep chrom=chr19 start=61707292 step=36 span=36
+1
+fixedStep chrom=chr19 start=61707336 step=23 span=23
+1
+fixedStep chrom=chr2 start=29 step=27 span=27
+1
+fixedStep chrom=chr2 start=32955941 step=30 span=30
+1
+fixedStep chrom=chr2 start=35847916 step=25 span=25
+1
+fixedStep chrom=chr2 start=36922395 step=30 span=30
+1
+fixedStep chrom=chr2 start=67964463 step=26 span=26
+1
+fixedStep chrom=chr2 start=75124744 step=26 span=26
+1
+fixedStep chrom=chr2 start=83764057 step=21 span=21
+1
+fixedStep chrom=chr2 start=88190828 step=9193 span=9193
+1
+fixedStep chrom=chr2 start=92009345 step=29 span=29
+1
+fixedStep chrom=chr2 start=173553253 step=28 span=28
+1
+fixedStep chrom=chr2 start=174742800 step=31 span=31
+1
+fixedStep chrom=chr2 start=234896425 step=27 span=27
+1
+fixedStep chrom=chr2 start=237006459 step=27 span=27
+1
+fixedStep chrom=chr2 start=242696644 step=33 span=33
+1
+fixedStep chrom=chr2 start=242696718 step=28 span=28
+1
+fixedStep chrom=chr20 start=140 step=40 span=40
+1
+fixedStep chrom=chr20 start=181 step=92 span=92
+1
+fixedStep chrom=chr20 start=862165 step=5911 span=5911
+1
+fixedStep chrom=chr20 start=37336453 step=27 span=27
+1
+fixedStep chrom=chr20 start=66210121 step=31 span=31
+1
+fixedStep chrom=chr20 start=66210156 step=56 span=56
+1
+fixedStep chrom=chr21 start=0 step=53 span=53
+1
+fixedStep chrom=chr21 start=43083624 step=21 span=21
+1
+fixedStep chrom=chr22 start=102 step=55 span=55
+1
+fixedStep chrom=chr22 start=491 step=23 span=23
+1
+fixedStep chrom=chr22 start=969 step=34 span=34
+1
+fixedStep chrom=chr22 start=1486 step=22 span=22
+1
+fixedStep chrom=chr22 start=4809620 step=29 span=29
+1
+fixedStep chrom=chr22 start=4809715 step=39 span=39
+1
+fixedStep chrom=chr22 start=39136546 step=8623 span=8623
+1
+fixedStep chrom=chr22 start=48810585 step=25 span=25
+1
+fixedStep chrom=chr22 start=51353383 step=37 span=37
+1
+fixedStep chrom=chr22 start=51353422 step=34 span=34
+1
+fixedStep chrom=chr22 start=51353534 step=95 span=95
+1
+fixedStep chrom=chr22 start=51353694 step=41 span=41
+1
+fixedStep chrom=chr22 start=51353742 step=34 span=34
+1
+fixedStep chrom=chr22 start=51353795 step=21 span=21
+1
+fixedStep chrom=chr3 start=0 step=33 span=33
+1
+fixedStep chrom=chr3 start=58 step=29 span=29
+1
+fixedStep chrom=chr3 start=1021188 step=24 span=24
+1
+fixedStep chrom=chr3 start=9173890 step=23 span=23
+1
+fixedStep chrom=chr3 start=18651200 step=26 span=26
+1
+fixedStep chrom=chr3 start=19407956 step=30 span=30
+1
+fixedStep chrom=chr3 start=32905434 step=27 span=27
+1
+fixedStep chrom=chr3 start=42128650 step=25 span=25
+1
+fixedStep chrom=chr3 start=124646232 step=28 span=28
+1
+fixedStep chrom=chr3 start=125751238 step=26 span=26
+1
+fixedStep chrom=chr3 start=129922887 step=28 span=28
+1
+fixedStep chrom=chr3 start=140520064 step=25 span=25
+1
+fixedStep chrom=chr3 start=156625743 step=27 span=27
+1
+fixedStep chrom=chr3 start=161890940 step=33 span=33
+1
+fixedStep chrom=chr3 start=167406573 step=27 span=27
+1
+fixedStep chrom=chr3 start=169183298 step=23 span=23
+1
+fixedStep chrom=chr3 start=201105127 step=24 span=24
+1
+fixedStep chrom=chr3 start=201105286 step=26 span=26
+1
+fixedStep chrom=chr4 start=3 step=52 span=52
+1
+fixedStep chrom=chr4 start=151 step=35 span=35
+1
+fixedStep chrom=chr4 start=241 step=47 span=47
+1
+fixedStep chrom=chr4 start=7836212 step=53 span=53
+1
+fixedStep chrom=chr4 start=7838009 step=38 span=38
+1
+fixedStep chrom=chr4 start=7838489 step=35 span=35
+1
+fixedStep chrom=chr4 start=7838917 step=23 span=23
+1
+fixedStep chrom=chr4 start=7839897 step=71 span=71
+1
+fixedStep chrom=chr4 start=7840249 step=38 span=38
+1
+fixedStep chrom=chr4 start=21780457 step=25 span=25
+1
+fixedStep chrom=chr4 start=39784025 step=28 span=28
+1
+fixedStep chrom=chr4 start=52004796 step=34994 span=34994
+1
+fixedStep chrom=chr4 start=52524846 step=9789 span=9789
+1
+fixedStep chrom=chr4 start=59926501 step=21 span=21
+1
+fixedStep chrom=chr4 start=96449836 step=25 span=25
+1
+fixedStep chrom=chr4 start=130121044 step=32 span=32
+1
+fixedStep chrom=chr4 start=131857337 step=21 span=21
+1
+fixedStep chrom=chr4 start=144007189 step=26 span=26
+1
+fixedStep chrom=chr4 start=157555968 step=30 span=30
+1
+fixedStep chrom=chr4 start=161913380 step=24 span=24
+1
+fixedStep chrom=chr4 start=169927058 step=12742 span=12742
+1
+fixedStep chrom=chr4 start=186171261 step=10357 span=10357
+1
+fixedStep chrom=chr4 start=193575250 step=40 span=40
+1
+fixedStep chrom=chr4 start=193575324 step=46 span=46
+1
+fixedStep chrom=chr4 start=193575381 step=29 span=29
+1
+fixedStep chrom=chr5 start=20 step=30 span=30
+1
+fixedStep chrom=chr5 start=174 step=62 span=62
+1
+fixedStep chrom=chr5 start=261 step=33 span=33
+1
+fixedStep chrom=chr5 start=39409190 step=36 span=36
+1
+fixedStep chrom=chr5 start=100565812 step=29 span=29
+1
+fixedStep chrom=chr5 start=102558806 step=25 span=25
+1
+fixedStep chrom=chr5 start=115533329 step=25 span=25
+1
+fixedStep chrom=chr5 start=127491570 step=21 span=21
+1
+fixedStep chrom=chr5 start=156624820 step=23 span=23
+1
+fixedStep chrom=chr5 start=181651681 step=12930 span=12930
+1
+fixedStep chrom=chr5 start=182045374 step=24 span=24
+1
+fixedStep chrom=chr6 start=0 step=30 span=30
+1
+fixedStep chrom=chr6 start=50 step=27 span=27
+1
+fixedStep chrom=chr6 start=24897156 step=27 span=27
+1
+fixedStep chrom=chr6 start=40984197 step=30 span=30
+1
+fixedStep chrom=chr6 start=75720528 step=28 span=28
+1
+fixedStep chrom=chr6 start=93329559 step=30 span=30
+1
+fixedStep chrom=chr6 start=118120554 step=22 span=22
+1
+fixedStep chrom=chr6 start=159017162 step=3460 span=3460
+1
+fixedStep chrom=chr6 start=172126608 step=29 span=29
+1
+fixedStep chrom=chr6 start=172126703 step=24 span=24
+1
+fixedStep chrom=chr7 start=16 step=49 span=49
+1
+fixedStep chrom=chr7 start=73 step=40 span=40
+1
+fixedStep chrom=chr7 start=28913043 step=28 span=28
+1
+fixedStep chrom=chr7 start=35732940 step=30 span=30
+1
+fixedStep chrom=chr7 start=66195666 step=25 span=25
+1
+fixedStep chrom=chr7 start=76595900 step=18296 span=18296
+1
+fixedStep chrom=chr7 start=109039062 step=29 span=29
+1
+fixedStep chrom=chr7 start=110865325 step=28 span=28
+1
+fixedStep chrom=chr7 start=119133096 step=29 span=29
+1
+fixedStep chrom=chr7 start=137214837 step=28 span=28
+1
+fixedStep chrom=chr7 start=141042662 step=30 span=30
+1
+fixedStep chrom=chr7 start=146712094 step=30 span=30
+1
+fixedStep chrom=chr7 start=154391042 step=31 span=31
+1
+fixedStep chrom=chr7 start=158963002 step=4400 span=4400
+1
+fixedStep chrom=chr7 start=160567360 step=21 span=21
+1
+fixedStep chrom=chr8 start=213 step=24 span=24
+1
+fixedStep chrom=chr8 start=2936788 step=27 span=27
+1
+fixedStep chrom=chr8 start=17905911 step=21 span=21
+1
+fixedStep chrom=chr8 start=22670368 step=32 span=32
+1
+fixedStep chrom=chr8 start=29208093 step=22 span=22
+1
+fixedStep chrom=chr8 start=33053427 step=30 span=30
+1
+fixedStep chrom=chr8 start=35495046 step=23 span=23
+1
+fixedStep chrom=chr8 start=63518387 step=33 span=33
+1
+fixedStep chrom=chr8 start=89290123 step=23 span=23
+1
+fixedStep chrom=chr8 start=107000396 step=29 span=29
+1
+fixedStep chrom=chr8 start=128936548 step=21 span=21
+1
+fixedStep chrom=chr8 start=142319226 step=12193 span=12193
+1
+fixedStep chrom=chr8 start=143875584 step=28 span=28
+1
+fixedStep chrom=chr9 start=28418228 step=30 span=30
+1
+fixedStep chrom=chr9 start=67950861 step=3095 span=3095
+1
+fixedStep chrom=chr9 start=68471999 step=35 span=35
+1
+fixedStep chrom=chr9 start=68613940 step=3487 span=3487
+1
+fixedStep chrom=chr9 start=78635185 step=29 span=29
+1
+fixedStep chrom=chr9 start=149602675 step=7243 span=7243
+1
+fixedStep chrom=chr9 start=150616862 step=23 span=23
+1
+fixedStep chrom=chr9 start=150617222 step=52 span=52
+1
+fixedStep chrom=chrX start=1921077 step=12335 span=12335
+1
+fixedStep chrom=chrX start=4221751 step=24 span=24
+1
+fixedStep chrom=chrX start=7723014 step=11561 span=11561
+1
+fixedStep chrom=chrX start=8053743 step=31 span=31
+1
+fixedStep chrom=chrX start=8444004 step=28 span=28
+1
+fixedStep chrom=chrX start=8656697 step=32 span=32
+1
+fixedStep chrom=chrX start=9248147 step=30 span=30
+1
+fixedStep chrom=chrX start=16675827 step=22 span=22
+1
+fixedStep chrom=chrX start=23408358 step=27 span=27
+1
+fixedStep chrom=chrX start=46767603 step=24 span=24
+1
+fixedStep chrom=chrX start=56016343 step=33 span=33
+1
+fixedStep chrom=chrX start=59218363 step=18781 span=18781
+1
+fixedStep chrom=chrX start=90397173 step=27 span=27
+1
+fixedStep chrom=chrX start=92957973 step=31 span=31
+1
+fixedStep chrom=chrX start=123541156 step=27 span=27
+1
+fixedStep chrom=chrX start=144228792 step=28 span=28
+1

@@ -2,10 +2,11 @@
 CHM13 human reference genome issue tracking
 
 For any downstream analysis, please use the following files:
-* Possible consensus or mis-assembly issue: <ver.>_issues.bed (= hifi.pri.issues.bed as ont issues overlap)
-* Het sites: chm13.draft_v1.0.curated_sv.20210612.vcf, chm13.draft_v1.0.hets_combined.20210615.bed
+* Possible consensus or mis-assembly issue: <ver.>_issues.bed
+* Het sites: <ver.>/chm13.draft_<ver.>.curated_sv.20210612.vcf, <ver.>/chm13.draft_<ver.>.hets_combined.20210615.bed
 
 ## Releases
+* 2021-06-23 Updating 3 additional issues and adding error k-mers in v1.0 and v1.1
 * 2021-06-15 Validated het SVs and clusters of heterozygous sites in v1.0 assembly
 * 2021-04-28 Issues track for HiFi and ONT read alignments from Winnowmap 2.01
 * 2021-03-08 Combined low coverage and clipped regions
@@ -70,6 +71,9 @@ Total number of reads with more than 100 bp soft-clipped or hard-clipped bases w
 | Low_Qual | Low coverage from lower consensus quality | 204,0,0 | red |
 | Low_GA/TC, Low_AT | Low coverage from sequencing bias | 153,153,255 | light purple |
 | Clipped | Region with excessive read clipping | 153,153,153 | gray |
+| Error_Kmer | K-mers identified as errors from the Illumina-HiFi hybrid 21-mers |
+| Collapse | Approximate region conatining sequence collapse |
+| Chimeric_Hap | Chimeric consensus of two haplotypes |
 
 * clipped.bed
 * Absolute num. reads with clipping: hifi_pri.w1k.clip_abs.wig, ont_pri.len1k_idy85.w1k.clip_abs.wig
