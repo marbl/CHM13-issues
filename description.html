@@ -1,9 +1,9 @@
 <h2>Description</h2>
-<p>Issues Track: v1.0_issues.bed (hifi.pri.issues.bed)<\p>
+<p>Issues Track: <ver.>_issues.bed<\p>
 
 <h2>Methods</h2>
 <p>
-This file contains regions with low coverage from HiFi and ONT platforms.<br><br>
+This file contains regions with low coverage support and locatoin of each error k-mer obtained from HiFi and ONT platforms.<br><br>
 
 Reads were aligned with Winnowmap 2.01.<br><br>
 Primary read alignments have been processed with asset commit ver. 0133f268eebf308a1c3eb356b564550526465157, and regions meeting the following criteria are reported in each platform:<br>
@@ -12,23 +12,24 @@ Primary read alignments have been processed with asset commit ver. 0133f268eebf3
 <li> Merged when regions are less than 5 kb apart<br>
 <li> Exclude low coverage at both 3 kb ends of each chromosome due to natural coverage drop<br>
 <li> Exclude low coverage overlapping rDNA gaps
+
+Additionally, regions below were included:
+  
+<li> Regions with base error were detected with 21-mers from Illumina-HiFi reads using Merqury
+<li> Chimeric consensus of two haplotypes and collapsed simple tandem repeat, found from variant calling and other methods
+
 </p>
 <p>
-Issues track from each platform:
+Low coverage track from each platform:
 <li> hifi.pri.issues.bed
-<li> ont.pri.len1k_idy85.issues.bed (this file contains regions completely overlapping hifi.pri.issues.bed)
-</p>
-<p>
-Clipped regions not associated with low coverage:
-<li> hifi.pri.clipped.bed
-<li> ont.pri.len1k_idy85.clipped.bed
+<li> ont.pri.len1k_idy85.issues.bed
 </p>
 <h2>Display Conventions and Configuration</h2>
 <!-- if there are special conventions, like colors, describe them here -->
 <p>
-<li> Low (Low coverage) or Low_Qual (Low coverage associated with consensus error) : 204,0,0 (red)
-<li> Low_GA/TC, Low_AT (Low coverage from sequencing bias) : 153,153,255 (light purple)
-<li> Clipped (Region with excessive read clipping) : 153,153,153 (gray)
+<li> Error_Kmer (k-mers found only in the assembly, and not in the Illumina-HiFi hybrid set) : 0,0,0 (black)
+<li> Chimeric_Hap (Joined two haplotypes) and Collapse : 204,0,0 (red)
+<li> Low (Low coverage), Low_Qual (Low coverage associated with consensus error) : 204,0,0 (red)
 </p>
 
 
