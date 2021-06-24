@@ -11,16 +11,16 @@ Primary read alignments have been processed with asset commit ver. 0133f268eebf3
 <li> Less than 7 reads aligned in hifi, 10 reads aligned in ONT<br>
 <li> Merged when regions are less than 5 kb apart<br>
 <li> Exclude low coverage at both 3 kb ends of each chromosome due to natural coverage drop<br>
-<li> Exclude low coverage overlapping rDNA gaps
+<li> Exclude low coverage overlapping rDNA gaps<br><br>
 
-Additionally, regions below were included:
+Additionally, regions below were included:<br><br>
   
 <li> Regions with base error were detected with 21-mers from Illumina-HiFi reads using Merqury
 <li> Chimeric consensus of two haplotypes and collapsed simple tandem repeat, found from variant calling and other methods
 
 </p>
 <p>
-Low coverage track from each platform:
+Raw low coverage tracks from each platform (containing clippings and low coverage from sequencing biases):
 <li> hifi.pri.issues.bed
 <li> ont.pri.len1k_idy85.issues.bed
 </p>
@@ -37,9 +37,11 @@ Low coverage track from each platform:
 <!-- Optional, links for downloading the data if there is a separate source beside the
 browser  -->
 <p>https://github.com/marbl/CHM13-issues/v1.0_issues.bed</p>
+<p>https://github.com/marbl/CHM13-issues/v1.1_issues.bed</p>
 
 <h2>Release history</h2>
 <ol>
+<li> 2021 Jun 24. Update to include error k-mers, removing clippings and calls from sequencing biases
 <li> 2021 Apr 28. Internal release
 <li> 2021 Feb 23. Internal release
 </ol>
