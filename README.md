@@ -63,17 +63,25 @@ In addition, regions overlapping with known consensus issues obtained with [Merq
 Total number of reads with more than 100 bp soft-clipped or hard-clipped bases were collected in every 1024 bp window for both HiFi and ONT reads. Clipped regions were identified when 1) >10x HiFi or ONT reads were clipped; or 2) >10% of the HiFi or >15% of the ONT total aligned reads were clipped.
 
 ### Associated files
-* issues.bed: Low coverage + Flanking clipped regions
+* <ver.>_issues.bed: Low coverage not associated with sequencing biases and other issues
 
+| Label | Description | R,G,B | Color|
+| :--- | :--- | :---: | :---: |
+| Low | Low coverage | 204,0,0 | red |
+| Low_Qual | Low coverage from lower consensus quality | 204,0,0 | red |
+| Error_Kmer | K-mers identified as errors from the Illumina-HiFi hybrid 21-mers | 0,0,0 | black |
+| Collapse | Approximate region conatining sequence collapse | 204,0,0 | red |
+| Chimeric_Hap | Chimeric consensus of two haplotypes | 204,0,0 | red
+
+
+* issues_raw/<platform>.issues.bed : Low coverage + Flanking clipped regions
 | Label | Description | R,G,B | Color|
 | :--- | :--- | :---: | :---: |
 | Low | Low coverage | 204,0,0 | red |
 | Low_Qual | Low coverage from lower consensus quality | 204,0,0 | red |
 | Low_GA/TC, Low_AT | Low coverage from sequencing bias | 153,153,255 | light purple |
 | Clipped | Region with excessive read clipping | 153,153,153 | gray |
-| Error_Kmer | K-mers identified as errors from the Illumina-HiFi hybrid 21-mers |
-| Collapse | Approximate region conatining sequence collapse |
-| Chimeric_Hap | Chimeric consensus of two haplotypes |
+
 
 * clipped.bed
 * Absolute num. reads with clipping: hifi_pri.w1k.clip_abs.wig, ont_pri.len1k_idy85.w1k.clip_abs.wig
