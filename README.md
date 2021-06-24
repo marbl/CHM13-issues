@@ -74,7 +74,8 @@ Total number of reads with more than 100 bp soft-clipped or hard-clipped bases w
 | Chimeric_Hap | Chimeric consensus of two haplotypes | 204,0,0 | red
 
 
-* issues_raw/<platform>.issues.bed : Low coverage + Flanking clipped regions
+* issues_raw/\<platform\>.issues.bed : Low coverage + Flanking clipped regions
+
 | Label | Description | R,G,B | Color|
 | :--- | :--- | :---: | :---: |
 | Low | Low coverage | 204,0,0 | red |
@@ -83,6 +84,7 @@ Total number of reads with more than 100 bp soft-clipped or hard-clipped bases w
 | Clipped | Region with excessive read clipping | 153,153,153 | gray |
 
 
+#### Other files under issues_raw:
 * clipped.bed
 * Absolute num. reads with clipping: hifi_pri.w1k.clip_abs.wig, ont_pri.len1k_idy85.w1k.clip_abs.wig
 * Relative fraction of clipped reads compared to all reads: hifi_pri.w1k.clip_norm.wig, ont_pri.len1k_idy85.w1k.clip_norm.wig
