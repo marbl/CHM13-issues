@@ -123,4 +123,5 @@ SVs manually validated for breakpoints, CCS AF, and SV type. CLR and ONT AF may 
 
 Please cite the paper below if any of the materials posted on this github are used:
 
-Nurk, Koren, Rhie, and Rautiainen et al, The complete sequence of a human genome, bioRxiv (2021) https://doi.org/10.1101/2021.05.26.445798
+Mc Cartney AM, Shafin K, Alonge M et al., Chasing perfection: validation and polishing strategies for telomere-to-telomere genome assemblies. bioRxiv (2021) https://doi.org/10.1101/2021.07.02.450803
+Nurk, Koren, Rhie, and Rautiainen et al., The complete sequence of a human genome. bioRxiv (2021) https://doi.org/10.1101/2021.05.26.445798
