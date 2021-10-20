@@ -6,6 +6,7 @@ For any downstream analysis, please use the following files:
 * Het sites: <ver.>/chm13.draft_<ver.>.curated_sv.20210612.vcf, <ver.>/chm13.draft_<ver.>.hets_combined.20210615.bed
 
 ## Releases
+* 2021-10-13 Het regions lifted over from v1.0 to v1.1
 * 2021-06-23 Updating 3 additional issues and adding error k-mers in v1.0 and v1.1
 * 2021-06-15 Validated het SVs and clusters of heterozygous sites in v1.0 assembly
 * 2021-04-28 Issues track for HiFi and ONT read alignments from Winnowmap 2.01
