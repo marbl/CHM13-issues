@@ -11,7 +11,7 @@ Short and long variants were called on Illumina, HiFi, CLR, and ONT alignments.
 * [v0.9 -> v1.0 chain](https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/changes/v0.9_to_v1.0/v0.9_to_v1.0.chain)
 
 ## Alignments
-In addition to the long-read alignments used in the [Coverage analysis](), PCR-free Illumina reads were aligned with [bwa mem v0.7.15](https://github.com/lh3/bwa) and removed PCR duplicate-like redundancies using [biobambam2 v2.0.87](https://github.com/gt1/biobambam2) `bamsormadup`.
+In addition to the long-read alignments used in the [Coverage analysis](https://github.com/marbl/CHM13-issues/blob/main/coverage.md), PCR-free Illumina reads were aligned with [bwa mem v0.7.15](https://github.com/lh3/bwa) and removed PCR duplicate-like redundancies using [biobambam2 v2.0.87](https://github.com/gt1/biobambam2) `bamsormadup`.
 
 ## Variant calling
 **S**hort **N**ucleotide **V**ariants (SNV) and *S*tructural *V*ariants (SV) were called using 
