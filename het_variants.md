@@ -3,7 +3,7 @@
 More details are described in _Mc Cartney AM, Shafin K, Alonge M et al., Chasing perfection: validation and polishing strategies for telomere-to-telomere genome assemblies._ bioRxiv (2021) https://doi.org/10.1101/2021.07.02.450803.
 
 ## Curated SVs
-SV calling procedure was performed on the T2T-CHM13v0.9 and T2T-CHM13v1.0 assembly using HiFi and ONT read alignments as described [here](). During manual inspection of SV calls on T2T-CHM13v0.9 assembly with Winnowmap v1.11, we found excessive read clippings in highly repetitive regions, which was fixed in v2.01. Manual inspection was performed on the newly called SVs compared to SVs called from T2T-CHM13v0.9, excluding SVs called only by ONT. The final curated set of SVs were lifted over to T2T-CHM13v1.1 using [picard](https://gatk.broadinstitute.org/hc/en-us/articles/360037060932-LiftoverVcf-Picard-) `LiftoverVCF`.
+SV calling procedure was performed on the T2T-CHM13v0.9 and T2T-CHM13v1.0 assembly using HiFi and ONT read alignments as described [here](https://github.com/marbl/CHM13-issues/blob/main/coverage.md). During manual inspection of SV calls on T2T-CHM13v0.9 assembly with Winnowmap v1.11, we found excessive read clippings in highly repetitive regions, which was fixed in v2.01. Manual inspection was performed on the newly called SVs compared to SVs called from T2T-CHM13v0.9, excluding SVs called only by ONT. The final curated set of SVs were lifted over to T2T-CHM13v1.1 using [picard](https://gatk.broadinstitute.org/hc/en-us/articles/360037060932-LiftoverVcf-Picard-) `LiftoverVCF`.
 
 * Resulting curated heterozygous variants are listed as <ver.>/hets/chm13.draft_<ver.>.curated_sv.YYYYMMDD.vcf.
 
@@ -34,7 +34,7 @@ Hets from SV calling methods, manually curated for the position, LEN, AF, and SV
 
 ### Clipped
 Heterozygous regions from read clippings in HiFi and ONT, curated for position, LEN, AF, and SV type. `Clipped` regions from issues_raw/\<platform\>.issues.bed were manually examined.
-See [Coverage analysis]() for more details.
+See [Coverage analysis](https://github.com/marbl/CHM13-issues/blob/main/coverage.md) for more details.
 
 ### NucFreq
 Clusters of heterozygous small variants called with [NucFreq](https://github.com/mrvollger/NucFreq) (Vollger et al., Nat Methods, 2018). 
