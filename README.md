@@ -13,6 +13,15 @@ For any downstream analysis, please use the following files:
 * 2021-03-08 Combined low coverage and clipped regions
 * 2021-02-23 Low coverage regions for HiFi, CLR, and ONT read alignments
 
+## Issues.bed file format
+| Label | Description | R,G,B | Color|
+| :--- | :--- | :---: | :---: |
+| Low | Low coverage | 204,0,0 | red |
+| Low_Qual | Low coverage from lower consensus quality | 204,0,0 | red |
+| Error_Kmer | K-mers identified as errors from the Illumina-HiFi hybrid 21-mers | 0,0,0 | black |
+| Collapse | Approximate region conatining sequence collapse | 204,0,0 | red |
+| Chimeric_Hap | Chimeric consensus of two haplotypes | 204,0,0 | red
+
 ## Methods
 Brief descriptions are provided for
 * [Coverage Analysis](https://github.com/marbl/CHM13-issues/blob/main/coverage.md)
