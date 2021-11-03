@@ -128,7 +128,8 @@ with the commands:
 ```
 find asm_v0.9.fasta > telomere
 java -cp telomere.jar FindTelomereWindows telomere 99.9 > windows
-cat windows |awk '{if ($NF > 0.5) print $2"\t"$4"\t"$5"\t"$3"\t"$NF}'|sed s/\>//g|bedtools merge -d 500 -i - -c 4 -o distinct > telomere
+cat windows |awk '{if ($NF > 0.5) print $2"\t"$4"\t"$5"\t"$3"\t"$NF}' | \
+  sed s/\>//g | bedtools merge -d 500 -i - -c 4 -o distinct > telomere
 ```
 
 This analysis revealed one missing telomere on the p-arm of Chromosome 18. We used telomeres identified in ONT reads >50kb from 
@@ -145,7 +146,8 @@ Telomere signal in all HiFi reads was identified with the commands:
 ```
 find hifi_20kb.fasta > telomere
 java -cp telomere.jar FindTelomereWindows telomere 99.9 > windows
-cat windows |awk '{if ($NF > 0.5) print $2"\t"$4"\t"$5"\t"$3"\t"$NF}'|sed s/\>//g|bedtools merge -d 500 -i - -c 4 -o distinct > telomere
+cat windows |awk '{if ($NF > 0.5) print $2"\t"$4"\t"$5"\t"$3"\t"$NF}'| \
+  sed s/\>//g | bedtools merge -d 500 -i - -c 4 -o distinct > telomere
 ```
 
 Seven additional HiFi reads were recruited from a manual analysis of the simplified version of the string graph. 
@@ -173,7 +175,8 @@ chr22	4793756	5749371
 
 The CHM13v1.0 assembly was generated using [bcftools v1.10](https://github.com/samtools/bcftools).
 ```
-bcftools consensus -H 1 --chain v0.9_to_v1.0.chain -f chm13.draft_v0.9.fasta v0.9_patch.vcf.gz > chm13.draft_v1.0.fasta
+bcftools consensus -H 1 --chain v0.9_to_v1.0.chain -f chm13.draft_v0.9.fasta v0.9_patch.vcf.gz \
+  > chm13.draft_v1.0.fasta
 ```
 
 In addition, the mitochondrial sequence (chrM) was manually rotated to start with the conventional Phenylalanine tRNA sequence
@@ -192,7 +195,44 @@ canonical k-mer repeats. Additionally, while annotating genes, we found one true
 * [v1.0 <-  v1.0 chain](https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/changes/v1.0_to_v1.1/v1.1_to_v1.0_rdna_merged.chain)
 
 ### Telomere polishing
-TBD
+A targeted error detection in telomeres was employed by retraining the original PEPPER model. In brief, on HG002 chr20, all forward strand reads were removed to correct for the original model’s dependence on having reads from both strands. 
+
+Using this retrained model, variants were called on CHM13v1.0 in the telomere regions and the coverage depth was calculated using samtools depth. The model is available to download from our [GCP bucket](https://storage.cloud.google.com/pepper-deepvariant-public/pepper_models/PEPPER_HP_R941_ONT_V4_T2T.pkl).
+
+```
+docker run --ipc=host \
+-v /data:/data \
+-u (id -u $USER):(id -g $USER) \
+kishwars/pepper_deepvariant:r0.4 \
+pepper_hp call_variant \
+-b /data/ont.primary.bam \
+-f /data/chm13.draft_v1.0.fasta \
+-m /opt/pepper_models/PEPPER_HP_R941_ONT_V4_T2T.pkl \
+-o /data/CHM13v1_PEPPER_HP_candidates/ \
+-s CHM13V1 \
+-t 71 \
+--ont
+
+# then we derived the depth at the telomere regions using:
+cat chm13.draft_v1.0.telomere.bed | awk '{print "samtools depth -r " $1":"$2"-"$3 " ont.primary.bam \
+  >> telomere_depths.bed"}' > depth_calculation.sh
+bash depth_calculation.sh
+```
+Finally, a [custom script](https://github.com/kishwarshafin/T2T_polishing_scripts/blob/master/telomere_variants/generate_telomere_edits.py) was used to calculated the Levenshtein distance between the canonical telomere k-mer and the sequence we derived after the candidate variant had been applied. Telomere edits were selected if the candidate had a minimum allele frequency of 0.5, a minimum genotype quality of 2 and reduced the Levenshtein distance to the canonical telomere k-mer when compared to the existing telomere sequence. Further, we trimmed the consensus sequence where ONT read depth support was lower than 5.
+```
+# and finally generated the variants by running:
+python3 generate_telomere_edits.py \
+--telomere_depth_bed telomere_depths.bed \
+--telomere_annotation chm13.draft_v1.0.telomere.bed \
+--fasta chm13.draft_v1.0.fasta \
+--output_vcf CHM13_v1.0_telomere_edits.vcf \
+--small_variant_vcf T2T_v1.0_telomere_edits/CHM13v1_ONT_PEPPER_HP_CANDIDATES.vcf.gz \
+--min_depth 5 \
+--min_gq 2 \
+--min_vaf 0.5
+
+```
+
 
 ### Racon polishing
 See [this page](https://github.com/arangrhie/T2T-Polish/tree/master/automated_polishing) for more details.
