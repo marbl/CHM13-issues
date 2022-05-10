@@ -34,6 +34,8 @@ More details will be provided in [T2T-Polish](https://github.com/arangrhie/T2T-P
 
 Please cite the papers below if any of the materials posted on this github are used:
 
-Mc Cartney AM, Shafin K, Alonge M et al., Chasing perfection: validation and polishing strategies for telomere-to-telomere genome assemblies. bioRxiv (2021) https://doi.org/10.1101/2021.07.02.450803
+Mc Cartney AM, Shafin K, Alonge M et al., Chasing perfection: validation and polishing strategies for telomere-to-telomere genome assemblies. Nat Methods (2022) https://www.nature.com/articles/s41592-022-01440-3
 
-Nurk, Koren, Rhie, and Rautiainen et al., The complete sequence of a human genome. bioRxiv (2021) https://doi.org/10.1101/2021.05.26.445798
+(bioRxiv version: https://doi.org/10.1101/2021.07.02.450803)
+
+Nurk S, Koren S, Rhie A, and Rautiainen M et al., The complete sequence of a human genome. Science (2022) https://www.science.org/doi/10.1126/science.abj6987
