@@ -1,12 +1,14 @@
 <h2>Description</h2>
-<p>Issues Track: (ver.)_issues.bed<\p>
+<p>
+Known Issues of T2T-CHM13v2.0 from v2.0_issues.bed
+</p>
 
 <h2>Methods</h2>
 <p>
 This file contains regions with low coverage support and locatoin of each error k-mer obtained from HiFi and ONT platforms.<br><br>
 
 Reads were aligned with Winnowmap 2.01.<br><br>
-Primary read alignments have been processed with asset commit ver. 0133f268eebf308a1c3eb356b564550526465157, and regions meeting the following criteria are reported in each platform:<br>
+Primary read alignments have been processed with asset commit ver. <code>0133f268eebf308a1c3eb356b564550526465157</code>, and regions meeting the following criteria are reported in each platform:<br>
 
 <li> Less than 7 reads aligned in hifi, 10 reads aligned in ONT<br>
 <li> Merged when regions are less than 5 kb apart<br>
@@ -27,20 +29,23 @@ Raw low coverage tracks from each platform (containing clippings and low coverag
 <h2>Display Conventions and Configuration</h2>
 <!-- if there are special conventions, like colors, describe them here -->
 <p>
-<li> Error_Kmer (k-mers found only in the assembly, and not in the Illumina-HiFi hybrid set) : 0,0,0 (black)
-<li> Chimeric_Hap (Joined two haplotypes) and Collapse : 204,0,0 (red)
-<li> Low (Low coverage), Low_Qual (Low coverage associated with consensus error) : 204,0,0 (red)
+<li><span style='border: 1px inset #000000; background-color:#000000;'>&nbsp;&nbsp;&nbsp;</span> - Error_Kmer : K-mers found only in the assembly, and not in the Illumina-HiFi hybrid kmer set
+<li><span style='border: 1px inset #000000; background-color:#f00000;'>&nbsp;&nbsp;&nbsp;</span> - Chimeric_Hap (Joined two haplotypes) or Collapse
+<li><span style='border: 1px inset #000000; background-color:#f00000;'>&nbsp;&nbsp;&nbsp;</span> - Low (Low coverage) or Low_Qual : Low coverage associated with consensus error
+<li><span style='border: 1px inset #000000; background-color:#9999ff;'>&nbsp;&nbsp;&nbsp;</span> - Inversion breakpoint error at P5 palindrome and a likely assembly error in the Y chromosome
 </p>
 
 
 <h2>Data access</h2>
 <!-- Optional, links for downloading the data if there is a separate source beside the
 browser  -->
-<p>https://github.com/marbl/CHM13-issues/v1.0_issues.bed</p>
-<p>https://github.com/marbl/CHM13-issues/v1.1_issues.bed</p>
+<li>https://github.com/marbl/CHM13-issues/v1.0_issues.bed
+<li>https://github.com/marbl/CHM13-issues/v1.1_issues.bed
+<li>https://github.com/marbl/CHM13-issues/v2.0_issues.bed
 
 <h2>Release history</h2>
 <ol>
+<li> 2022 Dec 02. Issues added for v2.0. X and Y were simultaneously used in T2T-HG002XYv2.7, and issues found on the Y are appended to v1.1_issues.bed. Note the sequencing data used is from HG002
 <li> 2021 Jun 24. Update to include error k-mers, removing clippings and calls from sequencing biases
 <li> 2021 Apr 28. Internal release
 <li> 2021 Feb 23. Internal release
@@ -51,5 +56,10 @@ browser  -->
 <li><a href="https://github.com/marbl/CHM13-issues">Please report any issues to https://github.com/marbl/CHM13-issues</a>
 </ul>
 <h2>Credits</h2>
-<p>Please cite Mc Cartney AM, Shafin K, Alonge M et al. <a href="https://doi.org/10.1101/2021.07.02.450803">Chasing perfection: validation and polishing strategies for telomere-to-telomere genome assemblies.</a> bioRxiv (2021) doi: https://doi.org/10.1101/2021.07.02.450803</p>
+<p>Please cite the following papers:
+</p>
+<p>
+<li>Mc Cartney AM, Shafin K, Alonge M et al. <a href="https://doi.org/10.1038/s41592-022-01440-3">Chasing perfection: validation and polishing strategies for telomere-to-telomere genome assemblies</a>. Nat Methods 19, 687–695 (2022). https://doi.org/10.1038/s41592-022-01440-3
+<li>Rhie A, Nurk S, Cechova M, Hoyt SJ, Taylor DJ et al. <a href="https://doi.org/10.1038/s41586-023-06457-y">The complete sequence of a human Y chromosome</a>. Nature 621, 344–354 (2023). https://doi.org/10.1038/s41586-023-06457-y
+</p>
 
